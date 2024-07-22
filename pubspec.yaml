@@ -1,0 +1,57 @@
+name: modarakia
+description: A new Flutter project.
+ 
+ 
+publish_to: 'none'  
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+ 
+dependencies:
+  flutter_onboarding_slider: ^1.0.10
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/icon.png"
+  min_sdk_android: 21  
+  web:
+    generate: true
+    image_path: "assets/images/icon.png"
+    background_color: " 
+    theme_color: " 
+  windows:
+    generate: true
+    image_path: "assets/images/icon.png"
+    icon_size: 48  
+  macos:
+    generate: true
+    image_path: "assets/images/icon.png"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+  fonts:
+    - family: Baloo bhaijaan 2
+      fonts:
+        - asset: assets/fonts/BalooBhaijaan2-Regular.ttf
+        - asset: assets/fonts/BalooBhaijaan2-Bold.ttf
+        
