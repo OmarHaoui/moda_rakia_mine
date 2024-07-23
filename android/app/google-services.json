@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "842564652954",
+    "project_id": "moda-rakia",
+    "storage_bucket": "moda-rakia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842564652954:android:1d12e331bbd8081a1d3423",
+        "android_client_info": {
+          "package_name": "com.example.moda_rakia_mine"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaSZPpvwW1UaksMEkxzkVxUMPN1nQ0ivw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,14 +1,18 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_onboarding_slider/flutter_onboarding_slider.dart';
 import 'package:modarakia/pages/EnfantPage.dart';
 import 'package:modarakia/pages/HommePage.dart';
 import 'package:modarakia/pages/FemmePage.dart';
-import 'package:modarakia/result.dart';
+import 'package:modarakia/utils/constants.dart';
 
+import 'firebase_options.dart';
 import 'pages/genderPage.dart';
-import 'utils/widgets.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(MyApp());
 }
 
@@ -53,12 +57,9 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff1c1c37),
+      backgroundColor: AppColor.primaryColor,
       body: Center(
-        child: Image.asset(
-          "assets/images/logo.png",
-          width: MediaQuery.of(context).size.width - 50,
-        ),
+        child: Image.asset('assets/images/logo.png'),
       ),
     );
   }
